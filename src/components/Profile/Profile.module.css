@@ -1,0 +1,68 @@
+/* @import-normalize */
+
+/*  #e8e8e2 */
+/* rgba(232, 232, 226, 0.6) */
+/* #010101 */
+/* rgba(255,255,255,0.7) */
+/* rgba(255,255,255,0.24) */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.description {
+  padding: 100px 30px 100px 30px;
+  text-align: center;
+}
+
+.description img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 1px solid rgba(67, 68, 85, 0.4);
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.description p {
+  margin: 15px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.stats {
+  background-color: #f4f4fd;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border-top: 1px solid rgba(67, 68, 85, 0.4);
+}
+
+.stats li:not(:last-of-type) {
+  border-right: 1px solid rgba(67, 68, 85, 0.4);
+}
+
+.stats li {
+  width: calc(100% / 3);
+  padding: 20px;
+}
+
+.label {
+  display: block;
+}
+
+.quantity {
+  font-weight: 600;
+}

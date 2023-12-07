@@ -13,3 +13,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  font-family: 'Neue Montreal', sans-serif;
+  font-size: 18px;
+  line-height: 1.333;
+  color: var(--black-color);
+  background-color: var(--background-color);
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+}
+button {
+  border: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
