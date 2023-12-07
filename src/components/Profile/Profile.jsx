@@ -1,14 +1,15 @@
 import css from "./Profile.module.css"
 
-console.log(css)
 
 export function Profile({
   username,
   tag,
   location,
   avatar = 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-  stats: { followers, views, likes },
+    stats: { followers, views, likes },
+  
 }) {
+
   return (
       <div className={css.profile}>
           <div className={css.description}>
