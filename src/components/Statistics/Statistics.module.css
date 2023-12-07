@@ -4,9 +4,11 @@
   width: 500px;
   text-align: center;
   padding-top: 40px;
-  /* border-radius: 20px; */
+  border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .statTitle {
@@ -24,6 +26,13 @@
 /* .statList:nth-child() {
   border-radius: 20px;
 } */
+
+.item:first-child {
+  border-bottom-left-radius: 10px;
+}
+.item:last-child {
+  border-bottom-right-radius: 10px;
+}
 
 .item {
   width: calc(100% - (5px * 3) / 4);
