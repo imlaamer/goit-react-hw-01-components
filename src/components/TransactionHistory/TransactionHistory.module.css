@@ -1,0 +1,39 @@
+.tableBox {
+  width: 600px;
+  margin-bottom: 50px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.transactionTable {
+  border-collapse: collapse;
+  width: 100%;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.transactionTable,
+thead,
+tr,
+th,
+tbody,
+tr,
+td {
+  border: 1px solid rgba(128, 128, 128, 0.163);
+}
+
+.tableTitle th {
+  color: #fff;
+  background-color: #00bdd5;
+  padding: 10px;
+}
+
+.tableItem {
+}
+.tableItem:nth-child(2n) {
+  background-color: #ecf2f4;
+}
+
+.tableItem td {
+  padding: 10px;
+}

@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 60px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 4px,
+    rgba(17, 17, 26, 0.1) 0px 4px 8px, rgba(17, 17, 26, 0.1) 0px 0px 4px;
+  font-size: 24px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.status {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.friendAvatar {
+  height: 100%;
+  width: auto;
+}

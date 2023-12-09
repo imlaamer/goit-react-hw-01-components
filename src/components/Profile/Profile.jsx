@@ -1,36 +1,44 @@
-import css from "./Profile.module.css"
-
+import css from './Profile.module.css';
 
 export function Profile({
   username,
   tag,
   location,
   avatar = 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-    stats: { followers, views, likes },
-  
+  stats: { followers, views, likes },
 }) {
-
+  const {
+    profile,
+    description,
+    name,
+    label,
+    quantity,
+    tagProf,
+    avatarProf,
+    locationProf,
+    statsProf,
+  } = css;
   return (
-      <div className={css.profile}>
-          <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
+    <div className={profile}>
+      <div className={description}>
+        <img src={avatar} alt="User avatar" className={avatarProf} />
+        <p className={name}>{username}</p>
+        <p className={tagProf}>@{tag}</p>
+        <p className={locationProf}>{location}</p>
       </div>
 
-      <ul className={css.stats}>
+      <ul className={statsProf}>
         <li>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
+          <span className={label}>Followers</span>
+          <span className={quantity}>{followers}</span>
         </li>
         <li>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
+          <span className={label}>Views</span>
+          <span className={quantity}>{views}</span>
         </li>
         <li>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
+          <span className={label}>Likes</span>
+          <span className={quantity}>{likes}</span>
         </li>
       </ul>
     </div>
